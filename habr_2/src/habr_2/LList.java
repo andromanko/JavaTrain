@@ -64,9 +64,14 @@ public class LList<T> {
         }
     }
     
-	public <T> get()	{
-		Node current = _first;
+	public <T> int get(int n)	{
 		
+		//if (n>size) return null; //exception!!!
+		Node current = _first;
+		for (int i=0;i < this._size;i++)	{
+			current=current.getNext();
+		}
+		return (int) current.getData();
 	}
     
     public static void main(String[] args) {
@@ -104,6 +109,8 @@ public class LList<T> {
 			llist.add(random.nextInt());
 		}
 		System.out.println(llist.getSize());
+		
+		System.out.println(llist.get(3));
 		for(;;) {
 			//System.out.println(llist.getValue());
 			//бл€дь так он выводит ѕќ—Ћ≈ƒЌ»… элемент!
