@@ -5,7 +5,7 @@ import java.lang.ref.SoftReference;
 import java.lang.ref.WeakReference;
 import java.util.*;
 
-public class Main {
+public class referenceMain {
     public static void main1(String[] args) {
     Integer test = 1;
     Integer test1 = 2;
