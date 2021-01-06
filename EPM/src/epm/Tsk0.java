@@ -1,5 +1,6 @@
 package epm;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.ArrayList;
 
 
@@ -19,7 +20,13 @@ public class Tsk0 {
 	     	,arr1[]= {164,67,55,4,6,476,378},arr2[]= {64,67,55,94,6,476,378},arr3[]= {4,6,8,10,12,13},arr4[]= {},//;//= {4,4,4,4};;
 	    	arrT1[]= {1,1,1,2,2},arrT2[]= {1,2,5,8,10,12},arrT3[]={1,2,4,7,11,18,29,47},// {10,21,22,100,101,200,300}, //,arrT2[]= ,arrT3[]= ,
 	    	arrM1[]= {1,2,3,4,6,7,8,9},arrM2[]= {2,6,7,3,5,8,9,1},arrM3[]= {1,2,3,4,5,6,7,10},
-	    	arrP1[]= {1,2,3,4,5},arrP2[]= {2,6,4,8},arrP3[]={-4,-2,0,2,4};;
+	    	arrP1[]= {1,2,3,4,5},arrP2[]= {2,6,4,8},arrP3[]={-4,-2,0,2,4},
+	    	arrSI1[]= {1,3,5,6},arrSI2[]= {},
+	     	arrS1[]= {1,2,3,4,1,1,3},arrS2[]= {4,3,2,1},arrS3[]= {6,6,6,6},arrS4[]= {5,5,5,5},arrS5[]= {1,2,3,4},
+	     	arrEQ1[]= {1,2,3,4,5,6,7,8,9,-45,100},arrEQ2[]= {-1,3,-4,5,1,-6,2,1},arrEQ3[]= {1,3,1},arrEQ4[]= {1,2},arrEQ5[]= {5},arrEQ6[]= {};
+	       
+	     ;
+	     int arrSym1[][]= {{3,1,1},{1,6,1},{1,1,9}};
 	     System.out.println(
 	    //		"PLNDRM:"+isPalindrome("aba")+" "+isPalindrome("abbc")+"\n"+
 	    		 "NumberDeficiency 1: "+NumberDeficiency(1)+" 21:"+NumberDeficiency(21)+" 10:"+NumberDeficiency(10)+" 16: "+NumberDeficiency(16)//+"20: "+NumberDeficiency(20)
@@ -36,7 +43,17 @@ public class Tsk0 {
 	     //"reverseWord:"+reverseWords("the skY is Blue")+"\n"+reverseWords("the cake is a lie")+"\n"+reverseWords(null)+"\nnUll"+reverseWords("")+"\nEmpty\n"+
 	     //"StrParenthesis:"+isValid("2*((5-2)/3)")+" "+isValid("(5-1)*2)")+" "+isValid("()")+" "+isValid("()()")+" "+isValid("((")+" "+isValid("))")+" "+isValid(")(")+" "+isValid(null)+"\n"+
 	     //"isArithmeticProgression:"+ isArithmeticProgression(arrP1)+" "+isArithmeticProgression(arrP2)+" "+isArithmeticProgression(arrP3)+" "+"\n"
-	     );
+	    + "perfect 6:"+isPerfectNumber(6)+" perfect 8:"+isPerfectNumber(8)+" perfect -1:"+isPerfectNumber(-1)+
+	  "\n"+getLengthOfLongestCommonSunstring("","")+getLengthOfLongestCommonSunstring("nematode knowledge","empty bottle")+
+	  "\n"+ searchInsert(arrSI1,5)+" "+searchInsert(null,2)+" "+searchInsert(arrSI2,2)+" "+searchInsert(arrSI1,7)+" "+searchInsert(arrSI1,0)+
+	  "\n"+solution(4,arrS1)+" "+solution(11,arrS2)+" "+solution(6,arrS3)+" "+solution(6,arrS4)+" "+solution(10,arrS5)
+	  + "\n"+equilibrium(arrEQ1)+" "+equilibrium(arrEQ2)+" "+equilibrium(arrEQ3)+" "+equilibrium(arrEQ4)+" "+equilibrium(arrEQ5)+" "+equilibrium(arrEQ6)+" "
+	   +"\n"+isPolyDivisibleNumber(7)+" "+isPolyDivisibleNumber(12)+" "+isPolyDivisibleNumber(11)+" "+isPolyDivisibleNumber(987654564)+" "+isPolyDivisibleNumber(1111111111)+" "
+	   +"\n"+ chocolatesByNumber(7,4)+" "+ chocolatesByNumber(20,15)+" "+ chocolatesByNumber(10,4)+" "+ chocolatesByNumber(4,10)+" "+ chocolatesByNumber(1000526,72)+
+	   "\n"+isSymmetric(arrSym1));
+	  //+++ printPascalTriangle(4);printPascalTriangle(3);printPascalTriangle(2);printPascalTriangle(1);
+	    		 
+	    		 
 	    	
 }
 /*	public String practicePuzzle(Candidate candidate, Tutorial tutorial) {
@@ -76,7 +93,7 @@ public static boolean isPrime(int number ) {
 	return isPrime;
 }
 //+3	
-public static String toggleDoors(int numberOfDoors ) { ///WARNING!!! ХЕРНЯ!!!
+public static String toggleDoors(int numberOfDoors ) { ///WARNING!!! пїЅпїЅпїЅпїЅпїЅ!!!
 	boolean[] result =new boolean[numberOfDoors];
 	for (int i=0;i<numberOfDoors ;++i) {
 		result[i]=true;
@@ -109,7 +126,7 @@ public static boolean isPalindrome(final String str ) {
 	
 }
 //+5
-public static int NumberDeficiency(int number) throws NotDeficientNumberException {   ///БАГ ЕСТЬ
+public static int NumberDeficiency(int number) throws NotDeficientNumberException {   ///пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 	if (number <1) { 
 		throw new IllegalArgumentException("Argument number has to be a posiTivE NiMbErRRR");
 	}	
@@ -152,7 +169,7 @@ public static int getMaxBenefit(int[] stockPrices) {
 	return maxBenefit;
 }
 //+8
-public static boolean isNarcissistic(int number) {   ///НЕДОДЕЛАЛ!!!
+public static boolean isNarcissistic(int number) {   ///пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ!!!
 	if (number<0) {
 		throw new IllegalArgumentException("GiVeN number ust be positiveOrZero");
 	}
@@ -255,7 +272,7 @@ public static int findMissingNumber (int[] numbers, int n) {
 	return expectedSum-realSum;
 }
 
-//14 похоже на павду но не проверил. 
+/*/14 пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ. 
 public static boolean contains(TreeNode tree, int toBeFound) {
 	if (tree==null) {
 		throw new IllegalArgumentException("Params MUST NOt null");
@@ -317,7 +334,7 @@ public static boolean isNumberInArray(int[] numbers, int number) {
 	}
 	return false;
 }
-//18
+/*/18
 public boolean isSymetric (TreeNode root) {
 	if (root==null) {
 		throw new IllegalArgumentException("Root shounDN'T be null");
@@ -339,16 +356,16 @@ public boolean isSymmetric(TreeNode leftNode, TreeNode rightNode) {
 public static long countTriangleTriplets (int[] input) {
 	if (input==null) {		throw new NullPointerException("inPuTArraY is NULL");	}
 	long result=0;//FIX triangleCounts
-	Arrays.sort(input); //отсортировали
-	for (int k=input.length-1;k>1;k--) {//перебор всех элементов
-		int i=0; //сброс каждый раз что б идти с 0го
-		int j=k-1;   //FIX перебор "до" k-1го элемента
-		while (i!=j) { //пока не встретятся iиj
+	Arrays.sort(input); //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+	for (int k=input.length-1;k>1;k--) {//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+		int i=0; //пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ пїЅ 0пїЅпїЅ
+		int j=k-1;   //FIX пїЅпїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅ" k-1пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+		while (i!=j) { //пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ iпїЅj
 			if (input[k]<input[i]+input[j]) {
-				result +=j-i; //если треугольник
+				result +=j-i; //пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				j--;
 			} else { 
-				 //если не треугольник? нах?
+				 //пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ? пїЅпїЅпїЅ?
 				i++;
 			}
 		}
@@ -372,7 +389,194 @@ public static Integer smallestDistanceInArray(int[] a) {
 	return index;
 }
 	
-	
+//+
+public static boolean isPerfectNumber (int number ) {
+	if (number <1) { return false;};
+	int temp=0;
+	for (int i=1; i<=number/2;i++) {
+		if (number % i ==0) {
+			temp+=i;
+		}
+	}
+	return temp==number;
 }
+//+	
+public static int getLengthOfLongestCommonSunstring(String first, String second) {
+	if (first==null || second==null) {
+		throw new IllegalArgumentException("Inputs ShouldNoTBeNULL");
+	}
+	int maxLengthOfLCSS=0;
+	int[][] helpMatrix=new int[first.length()+1][second.length()+1];
+	for (int i=first.length()-1;i>=0;i--) {
+		for (int j=second.length()-1;j>=0;j--) {
+			if (first.charAt(i)==second.charAt(j)) {
+				helpMatrix[i][j]=1+helpMatrix[i+1][j+1];
+			}
+			if (helpMatrix[i][j]>maxLengthOfLCSS) {
+				maxLengthOfLCSS=helpMatrix[i][j];
+			}
+		}
+	}
+	return maxLengthOfLCSS;
+}
+//+
+public static int searchInsert(int[] sortedArray, int target) {
+	if (sortedArray==null || sortedArray.length==0) {
+		return 0;	
+	} 
+		return searchInsert(sortedArray,target,0,sortedArray.length-1);
+}
+public static int searchInsert(int[] sortedArray, int target, int start, int end) {
+	int mid=(start+end)/2;
+	if (target==sortedArray[mid]) {
+		return mid;
+	} else if (target<sortedArray[mid]) {
+		return ((start<mid) ? searchInsert(sortedArray,target,start,mid-1):start);
+	}
+	return ((end>mid)?searchInsert(sortedArray,target,mid+1,end):(end+1));
+}
+//+
+public static int solution(int k, int a[]) {
+	if (a==null) {
+		throw new IllegalArgumentException("paramCANNOtBeNull");
+	}
+	int result=0;
+	int currentLength=0;
+	for (int i=0;i<a.length;i++) {
+		currentLength+=a[i];
+		if (a[i]<1) {
+			throw new IllegalArgumentException("ALL ArrAy elements must be greater than 0");
+		} else if (currentLength>=k) {
+			//currentLength++;
+			result++;
+			currentLength=0;
+		}
+	}
+	return result;
+}
+//+
+public static int equilibrium(int[] array) {
+	if (array==null) {
+		throw new IllegalArgumentException ( " ArrayCannotBeNull");
+	}
+	int result=-1;///fix
+	long sumFromRight=0L; //FIX
+	long[] sumsFromLeft=new long[array.length];
+	for (int i=1;i<sumsFromLeft.length;i++) {
+		sumsFromLeft[i]=sumsFromLeft[i-1]+array[i-1];
+	}
+	for (int i=array.length-1;i>=0;i--) {
+			if (i!=array.length-1) {
+				sumFromRight=sumFromRight+array[i+1];
+			}
+			if (sumsFromLeft[i]==sumFromRight) {
+				result=i;
+			}
+	}
+	return result;
+}
+//+
+public static boolean isPolyDivisibleNumber(int number) {
+	if (number<1) {
+		throw new IllegalArgumentException("GivenNumberHASTOBE+++positivus!!!");
+	}
+	int toCountLength=number;
+	int length=0;
+	while (toCountLength!=0) {
+		toCountLength/=10;
+		length++;
+	}
+	boolean canStillBePolydivisible=true;
+	while (number!=0 && canStillBePolydivisible) {
+		if (number % length!=0) {
+			canStillBePolydivisible=false;
+		}
+	number/=10;
+	length--;
+	}
+	return canStillBePolydivisible;
+	}
+//+
+public static int chocolatesByNumber(int chocolateCount, int stepSize) {
+	if (chocolateCount <1 || stepSize<1) {
+		throw new IllegalArgumentException("Choko OrStepSize less tnah 1");
+	}
+	int greatestCommonDivisor=stepSize;
+	int countForGreatersCommonDivisor = chocolateCount;
+	int toBeSwapped=greatestCommonDivisor;
+	while (countForGreatersCommonDivisor % greatestCommonDivisor !=0) {
+		greatestCommonDivisor=countForGreatersCommonDivisor % greatestCommonDivisor;
+		countForGreatersCommonDivisor=toBeSwapped;
+	}	
+	return chocolateCount/greatestCommonDivisor;
+}
+//+
+public static void printPascalTriangle(int numberOfRows) {
+	if (numberOfRows<1) {
+		throw new IllegalArgumentException("NumberOf rows cannot be <1");
+	}
+	System.out.println("[1]");
+	int[] previousRow = new int[] {1};
+	for (int row=1;row<numberOfRows;row++  ) {
+		int[] actualRow = new int[row+1];
+		for (int col=0;col<=row;col++) {
+			if (col==0 || col==row) {
+				actualRow[col]=1;
+			} else {
+				actualRow	[col] = previousRow[col-1]+previousRow[col];
+			}
+		}
+		previousRow=actualRow;	
+		System.out.println(Arrays.toString(actualRow));
+	}
+	}
+//+
+public static boolean isSymmetric (final int[][] matrix) {
+	if (matrix==null) {
+		throw new IllegalArgumentException("CannOtBeNULL");
+	}
+	if (matrix.length==0) {
+		throw new IllegalArgumentException("this not ValIdMattrixxx");
+	}
+     boolean retval=true;
+     for (int i=0; retval && i<matrix.length;i++) {
+    	 if (matrix.length!=matrix[i].length) {
+    		 throw new IllegalArgumentException("this is not square matrix");
+    	 }
+    	 for (int j=0;retval && j<matrix[i].length;j++) {
+    		 int current = matrix[i][j];
+    		 int transpose = matrix [j][i];
+    		 retval = current==transpose;
+    	 }
+     }
+     return retval;
+}
+//not checked
+public static List<String> longestLines(List<String> inputLines) {
+	if (inputLines==null) {
+		throw new IllegalArgumentException("NOOOT rule argument!!!");
+	}
+	int currentMaxCount = 0;
+	List<String> lines = new ArrayList<String>();
+	for (String line:inputLines) {
+		int count = (line.trim().split("\\s+")).length;	
+		if (count>currentMaxCount) {
+			lines.clear();	
+			currentMaxCount=count;
+		}
+		if (count==currentMaxCount) {
+			lines.add(line);
+		}
+	}
+	return lines;
+}
+
+}
+
+
+
+
+
+
 
 
