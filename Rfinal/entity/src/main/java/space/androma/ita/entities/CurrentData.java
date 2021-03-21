@@ -21,22 +21,22 @@ import lombok.experimental.SuperBuilder;
 @AllArgsConstructor
 @SuperBuilder 
 @Entity
-@Table(name="data")
+@Table(name="cdata")
 public class CurrentData extends AEntity<Integer> {
 	
-	@Column(name="var1")
-	private Date datetime;
+	@Column(name="eventDT")
+	private String eventDateTime;
 	
-	@Column(name="var1")
-	private int var1;
-	
-	@Column(name="var2")
-	private int var2;
-	
-	@Column(name="var3")
-	private int var3;
-	
-	
+//	@Column(name="vvvar1")
+//	private int vvar1;
+//	
+//	@Column(name="vvvvar2")
+//	private int vvar2;
+//	
+//	@Column(name="vvvvar3")
+//	private int vvar3;
+//	
+//	
 //	OneToMany(mappedBy="user", fetch=FetchType.LAZY, cascade =CascadeType.PERSIST, orphanRemoval=true)
 //	private List<Events> pets;
 

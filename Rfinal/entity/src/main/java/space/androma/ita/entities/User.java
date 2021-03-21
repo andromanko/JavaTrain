@@ -33,37 +33,37 @@ import lombok.experimental.SuperBuilder;
 @Table(name="user")
 public class User extends AEntity<Integer> {
 	
-	@Column(name="login")
-	private String login;
+	@Column(name="ulogin")
+	private String ulogin;
 	
-	@Column(name="password")
-	private String password;
+//	@Column(name="upassword")
+//	private String upassword;
+//	
+//	@Column(name="uinfo")
+//	private String uinfo;
 	
-	@Column(name="info")
-	private String info;
-	
-	@OneToMany(mappedBy = "user", fetch = FetchType.LAZY, cascade = CascadeType.PERSIST, orphanRemoval = true)
+//	@OneToMany(mappedBy = "user", fetch = FetchType.LAZY, cascade = CascadeType.PERSIST, orphanRemoval = true)
 	    private List<Dev> devs;
 
-	    @ManyToMany(fetch = FetchType.LAZY)
-	    @JoinTable(name = "user_role", joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "id"), inverseJoinColumns = @JoinColumn(name = "role_id", referencedColumnName = "id"))
+//	    @ManyToMany(fetch = FetchType.LAZY)
+//	    @JoinTable(name = "user_role", joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "id"), inverseJoinColumns = @JoinColumn(name = "role_id", referencedColumnName = "id"))
 	    private Set<Role> roles;
 	    
 	    public String getLogin() {
-	        return login;
+	        return ulogin;
 	    }
 
 	    public void setLogin(String login) {
-	        this.login = login;
+	        this.ulogin = login;
 	    }
 
-	    public String getInfo() {
-	        return info;
-	    }
-
-	    public void setInfo(String info) {
-	        this.info = info;
-	    }
+//	    public String getInfo() {
+//	        return uinfo;
+//	    }
+//
+//	    public void setInfo(String info) {
+//	        this.uinfo = info;
+//	    }
 
 	    public List<Dev> getDevs() {
 	        return devs;
@@ -85,13 +85,13 @@ public class User extends AEntity<Integer> {
 	        this.roles = roles;
 	    }
 	    
-	    public String getPassword() {
-	        return password;
-	    }
-
-	    public void setPassword(String password) {
-	        this.password = password;
-	    }
+//	    public String getPassword() {
+//	        return upassword;
+//	    }
+//
+//	    public void setPassword(String password) {
+//	        this.upassword = password;
+//	    }
 
 }
 

@@ -6,11 +6,11 @@
 		<version>2.4.2</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-  <groupId>space.androma.ita</groupId>
+  <groupId>space.androma.ita.webScada</groupId>
   <artifactId>webScada</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <name>webScada</name>
+  <name>webScada project</name>
   <modules>
   	<module>entity</module>
   	<module>api</module>

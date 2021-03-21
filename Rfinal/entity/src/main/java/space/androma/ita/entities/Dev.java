@@ -26,27 +26,27 @@ import lombok.experimental.SuperBuilder;
 @Table(name="device")
 public class Dev extends AEntity<Integer> {
 	
-	@Column(name="name")
-	private String name;
+	@Column(name="DevName")
+	private String DevName;
 	
 //	@Column(name="type")
 //	private String type;
-	
-	@Column(name="IP")
-	private String ip;
-	
-	@Column(name="addr")
-	private byte addr;
-	
-	@Column(name="port")
-	private short port;
-	
-	@Column(name="driverId")
-	private int driverId;
-	
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "user_id", referencedColumnName = "id")
-    private User user;
+//	
+//	@Column(name="IP")
+//	private String aypi;
+//	
+//	@Column(name="addr")
+//	private byte addr;
+//	
+//	@Column(name="port")
+//	private short port;
+//	
+//	@Column(name="driverId")
+//	private int driverId;
+//	
+//    @ManyToOne(fetch = FetchType.EAGER)
+//    @JoinColumn(name = "user_id", referencedColumnName = "id")
+//    private User user;
 
 }
 

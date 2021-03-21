@@ -1,4 +1,4 @@
 space/androma/ita/services/services/DevService.class
+space/androma/ita/services/config/ServiceConfiguration.class
 space/androma/ita/services/services/UserService.class
 space/androma/ita/services/utils/LogoFileUploader.class
-space/androma/ita/services/config/ServiceConfiguration.class

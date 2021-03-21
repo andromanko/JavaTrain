@@ -24,32 +24,32 @@ import lombok.experimental.SuperBuilder;
 @Table(name="event")
 public class Event extends AEntity<Integer> {
 	
-	@Column(name="dateTime")//время события
-	private Date date;
+//	@Column(name="EdateTime")//время события
+//	private String EdateTime;
+//	
+//	@Column(name="edevId")//ИД девайса в котором зафиксирована авария
+//	private String edevId;
+//	
+//	@Column(name="euserId") //ИД юзера (чья смена), может быть 0
+//	private int euserId;
+//	
+//	@Column(name="eeventId") //ИД события из таблицы
+//	private int eeventId;
+//	
+//	@Column(name="evalue1")//переменная 1
+//	private int evalue1;
+//	
+//	@Column(name="evalue2")//переменная 2
+//	private int evalue2;
+//	
+//	@Column(name="ewarning")//признак предупроеждения события
+//	private boolean ewarning;
+//	
+//	@Column(name="ealarm") //признак аварийного события
+//	private boolean ealarm;
 	
-	@Column(name="devId")//ИД девайса в котором зафиксирована авария
-	private String devId;
-	
-	@Column(name="userId") //ИД юзера (чья смена), может быть 0
-	private int userId;
-	
-	@Column(name="eventId") //ИД события из таблицы
-	private int eventId;
-	
-	@Column(name="val1")//переменная 1
-	private int val1;
-	
-	@Column(name="val2")//переменная 2
-	private int val2;
-	
-	@Column(name="warning")//признак предупроеждения события
-	private boolean warning;
-	
-	@Column(name="alarm") //признак аварийного события
-	private boolean alarm;
-	
-	@Column(name="chDate") //время квитирования
-	private Date chDate;
+	@Column(name="echDate") //время квитирования
+	private String echDate;
 	
 //	OneToMany(mappedBy="user", fetch=FetchType.LAZY, cascade =CascadeType.PERSIST, orphanRemoval=true)
 //	private List<Events> pets;
