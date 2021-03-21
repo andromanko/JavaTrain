@@ -11,10 +11,11 @@
 			<column name="id" type="integer" autoIncrement="true">
 				<constraints primaryKey="true" nullable="false" />
 			</column>
-			<column name="username" type="varchar(40)">
+			<column name="login" type="varchar(40)">
 				<constraints nullable="false" />
 			</column>
 			<column name="password" type="varchar(255)" />
+			<column name="info" type="varchar(255)" />
 			<column name="avatar" type="varchar(255)" />
 			<column name="enabled" type="boolean" />
 		</createTable>
@@ -43,7 +44,7 @@
 				<constraints primaryKey="true" nullable="false" />
 			</column>
 			<column name="name" type="varchar(255)" />
-			<column name="driver_id" type="tinyint(255)" />
+			<column name="driverId" type="tinyint(255)" />
 			<column name="IP" type="varchar(255)" />
 			<column name="port" type="SMALLINT" />
 			<column name="addr" type="tinyint(255)" />

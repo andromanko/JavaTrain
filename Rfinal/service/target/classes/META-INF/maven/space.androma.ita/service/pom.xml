@@ -8,28 +8,28 @@
   <artifactId>service</artifactId>
   <dependencies>
   	<dependency>
-			<groupId>eu.it.academy.final</groupId>
-			<artifactId>final-api</artifactId>
+			<groupId>space.androma.ita</groupId>
+			<artifactId>api</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>eu.it.academy.final</groupId>
-			<artifactId>final-dao</artifactId>
+			<groupId>space.androma.ita</groupId>
+			<artifactId>dao</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>eu.it.academy.final</groupId>
-			<artifactId>final-logger</artifactId>
+			<groupId>space.androma.ita</groupId>
+			<artifactId>logger</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
-<!-- 		<dependency> -->
-<!-- 			<groupId>org.springframework.boot</groupId> -->
-<!-- 			<artifactId>spring-boot-starter-security</artifactId> -->
-<!-- 		</dependency> -->
-<!-- 		<dependency> -->
-<!-- 			<groupId>org.projectlombok</groupId> -->
-<!-- 			<artifactId>lombok</artifactId> -->
-<!-- 			<optional>true</optional> -->
-<!-- 		</dependency> -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
   </dependencies>
 </project>
