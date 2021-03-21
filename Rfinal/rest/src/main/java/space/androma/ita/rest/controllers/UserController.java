@@ -46,7 +46,7 @@ public class UserController {
     }
     
     @GetMapping(value = "/name/{login}")
-    public UserDto findUserByFirstName(@PathVariable String login) {
+    public UserDto findUserByLogin(@PathVariable String login) {
         return userService.findUserByLogin(login);
     }
     

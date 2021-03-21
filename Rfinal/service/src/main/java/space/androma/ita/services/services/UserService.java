@@ -3,9 +3,9 @@ package space.androma.ita.services.services;
 import java.io.IOException;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.crypto.password.PasswordEncoder;
+//import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+//import org.springframework.security.core.Authentication;
+//import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -31,8 +31,8 @@ public class UserService implements IUserService {
     @Autowired
     private IDevJPADao devJPADao;
     
-    @Autowired
-    private PasswordEncoder passwordEncoder;
+//    @Autowired
+//    private PasswordEncoder passwordEncoder;
 
     @Override
     public UserDto findUser(int id) {
@@ -49,7 +49,7 @@ public class UserService implements IUserService {
     public UserDto createUser(UserDto userDto) {
         User user = new User();
         user.setLogin(userDto.getLogin());
-        user.setPassword(passwordEncoder.encode(userDto.getPassword()));
+//        user.setPassword(passwordEncoder.encode(userDto.getPassword()));
 //        user.getRoles().add(new Role("ROLE_USER"));
         User savedUser = this.userJPADao.save(user);
         return UserMapper.mapUserDto(savedUser);
