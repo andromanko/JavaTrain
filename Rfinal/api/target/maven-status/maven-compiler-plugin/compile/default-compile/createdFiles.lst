@@ -1,0 +1,15 @@
+space/androma/ita/api/dao/IUserJPADao.class
+space/androma/ita/api/dao/IDevJPADao.class
+space/androma/ita/api/dto/UserDevIdsDto$UserDevIdsDtoBuilder.class
+space/androma/ita/api/services/IUserService.class
+space/androma/ita/api/dto/UserDto$UserDtoBuilder.class
+space/androma/ita/api/mappers/UserMapper.class
+space/androma/ita/api/dto/UserDevIdsDto.class
+space/androma/ita/api/dao/IUserDao.class
+space/androma/ita/api/mappers/DevMapper.class
+space/androma/ita/api/dto/DevDto.class
+space/androma/ita/api/dao/IDevDao.class
+space/androma/ita/api/dto/UserDto.class
+space/androma/ita/api/dao/IAGenericDao.class
+space/androma/ita/api/dto/DevDto$DevDtoBuilder.class
+space/androma/ita/api/services/IDevService.class

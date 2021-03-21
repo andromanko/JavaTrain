@@ -1,0 +1,38 @@
+07:13:59.741 INFO  -- Shutting down ExecutorService 'applicationTaskExecutor'
+07:13:59.747 INFO  -- Closing JPA EntityManagerFactory for persistence unit 'default'
+07:13:59.760 INFO  -- HikariPool-2 - Shutdown initiated...
+07:13:59.796 INFO  -- HikariPool-2 - Shutdown completed.
+23:06:16.208 INFO  -- Starting Application using Java 11.0.10 on roma-i3 with PID 142771 (/home/roma/git/JavaTrain/Rfinal/main/target/classes started by roma in /home/roma/git/JavaTrain/Rfinal/main)
+23:06:16.225 INFO  -- No active profile set, falling back to default profiles: default
+23:06:18.501 INFO  -- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23:06:18.530 INFO  -- Finished Spring Data repository scanning in 11 ms. Found 0 JPA repository interfaces.
+23:06:20.067 INFO  -- Tomcat initialized with port(s): 8080 (http)
+23:06:20.093 INFO  -- Initializing ProtocolHandler ["http-nio-8080"]
+23:06:20.095 INFO  -- Starting service [Tomcat]
+23:06:20.095 INFO  -- Starting Servlet engine: [Apache Tomcat/9.0.41]
+23:06:20.315 INFO  -- Initializing Spring embedded WebApplicationContext
+23:06:20.316 INFO  -- Root WebApplicationContext: initialization completed in 3661 ms
+23:06:20.734 INFO  -- HikariPool-1 - Starting...
+23:06:21.291 INFO  -- HikariPool-1 - Start completed.
+23:06:26.293 INFO  -- Successfully acquired change log lock
+23:06:27.507 INFO  -- Reading from rfinaldb.DATABASECHANGELOG
+23:06:27.596 INFO  -- Successfully released change log lock
+23:06:27.601 INFO  -- HikariPool-1 - Shutdown initiated...
+23:06:27.656 INFO  -- HikariPool-1 - Shutdown completed.
+23:06:27.910 INFO  -- HHH000204: Processing PersistenceUnitInfo [name: default]
+23:06:28.068 INFO  -- HHH000412: Hibernate ORM core version 5.4.27.Final
+23:06:28.584 INFO  -- HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+23:06:28.920 INFO  -- HikariPool-2 - Starting...
+23:06:28.934 INFO  -- HikariPool-2 - Start completed.
+23:06:28.958 INFO  -- HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+23:06:29.519 INFO  -- HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+23:06:29.543 INFO  -- Initialized JPA EntityManagerFactory for persistence unit 'default'
+23:06:29.682 WARN  -- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:06:30.118 INFO  -- Initializing ExecutorService 'applicationTaskExecutor'
+23:06:30.869 INFO  -- Starting ProtocolHandler ["http-nio-8080"]
+23:06:30.967 INFO  -- Tomcat started on port(s): 8080 (http) with context path ''
+23:06:30.998 INFO  -- Started Application in 17.058 seconds (JVM running for 19.421)
+23:10:56.629 INFO  -- Shutting down ExecutorService 'applicationTaskExecutor'
+23:10:56.631 INFO  -- Closing JPA EntityManagerFactory for persistence unit 'default'
+23:10:56.637 INFO  -- HikariPool-2 - Shutdown initiated...
+23:10:56.657 INFO  -- HikariPool-2 - Shutdown completed.

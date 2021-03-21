@@ -1,0 +1,6 @@
+/home/roma/git/JavaTrain/Rfinal/rest/src/main/java/space/androma/ita/rest/controllers/DevController.java
+/home/roma/git/JavaTrain/Rfinal/rest/src/main/java/space/androma/ita/rest/config/SecurityConfiguration.java
+/home/roma/git/JavaTrain/Rfinal/rest/src/main/java/space/androma/ita/rest/controllers/UserController.java
+/home/roma/git/JavaTrain/Rfinal/rest/src/main/java/space/androma/ita/rest/controllers/SignupController.java
+/home/roma/git/JavaTrain/Rfinal/rest/src/main/java/space/androma/ita/rest/controllers/MainController.java
+/home/roma/git/JavaTrain/Rfinal/rest/src/main/java/space/androma/ita/rest/utils/CustomAccessDeniedHandler.java
